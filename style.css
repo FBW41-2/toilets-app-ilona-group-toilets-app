@@ -1,0 +1,10 @@
+label {
+    background-color: rgb(128, 138, 93);
+    display: inline-block;
+    width: 150px;
+}
+
+.radio1 {
+    display: flex;
+    flex-direction: column;
+}

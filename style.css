@@ -1,10 +1,60 @@
-label {
-    background-color: rgb(128, 138, 93);
-    display: inline-block;
-    width: 150px;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.radio1 {
+form {
+    background-color: rgb(223, 249, 237);
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
+    padding: 20px 10px;
+    width: 400px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, .2);
+    border-radius: 3px;
+}
+
+form > div {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    width: 200px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    width: 200px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: auto;
+}
+
+i.fas {
+    color: rgb(218, 88, 170);
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: rgb(84, 169, 129);
+    font-size: 1.1em;
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(218, 88, 170);
 }

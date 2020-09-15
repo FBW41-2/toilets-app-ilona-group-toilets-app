@@ -125,14 +125,18 @@
             </div>
         </form>
         
-        <table>
+        
+
+    
+
+    </div>
+    <div class="table-class">
+        <table id="toilets-table">
             <thead>
                 <tr>
-                    <th colspan="1">City</th>
-                    <th colspan="1">Street</th>
-                    <th colspan="1">House nr</th>
-                    <th colspan="1">Name of location</th>
-                    <th colspan="5">Features </th>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Location</th>
                     <th>Mirror</th>
                     <th>Paper towels</th>
                     <th>Perfume</th>
@@ -145,25 +149,26 @@
             
             <tbody>
                 <tr>
-                    <td rowspan="2">Hamburg,Berlin,Singapore</td>
-                    <td>Felsenstr</td>
-                    <td>3</td>
-                    <td>Burgerking</td>
-                    <td>Soap,Perfume,Paper</td>
-
+                    <td class="city"></td>
+                    <td class="address"></td>
+                    <td class="location"></td>
+                    <td class="feat-mirror"></td>
+                    <td class="feat-papertowels"></td>
+                    <td class="feat-perfume"></td>
+                    <td class="feat-access"></td>
+                    <td class="feat-soap"></td>
+                    <td class="stalls"></td>
+                    <td class="rating"></td>
+                    
                 </tr>
             </tbody>
 
-            <tfoot>
-
-            </tfoot>
+            
             
         </table>
-
-    
-
     </div>
-
+    <script src="https://kloapp.herokuapp.com/javascripts/pure.min.js"></script>
+    <script src="https://kloapp.herokuapp.com/javascripts/render.js"></script>
 </body>
 </html>
 

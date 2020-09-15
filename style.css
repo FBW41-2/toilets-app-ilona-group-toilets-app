@@ -4,7 +4,7 @@
 }
 
 form {
-    background-color: #dff9ed;
+    background-color: #9FC3C7;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
@@ -102,17 +102,19 @@ input[type=checkbox] {
   }
   
   .rating label:last-child .icon {
-    color: #000;
+    color: #4A8D94;
+    opacity: 0.5;
   }
   
   .rating:not(:hover) label input:checked ~ .icon,
   .rating:hover label:hover input ~ .icon {
-    color: #4A8D94;
+    color: white;
   }
   
   .rating label input:focus:not(:checked) ~ .icon:last-child {
-    color: #000;
-    text-shadow: 0 0 5px #4A8D94;
+    color: #4A8D94;
+    opacity: 0.5;
+    text-shadow: 0 0 5px white;
   }
 
 input[type=submit] {
@@ -125,5 +127,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #FBA3A8;
+    background-color: white;
+    color: #4A8D94;
 }

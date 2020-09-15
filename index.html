@@ -10,6 +10,7 @@
 <body>
     <div class="form">
         <form action="https://kloapp.herokuapp.com/add" method="POST">
+            <h1>Find the best place to think</h1>
             <div>
                 <label for="city">Choose your city</label>
                 <select name="city" required minlength="3">
@@ -40,19 +41,28 @@
                 <input name="name" type="text" id="name">  
             </div>
 
-            <div>
+            <div class="checkbox-class">
                 <label for="feat-mirror">Mirror:</label>
-                <input type="checkbox" name="feat-mirror" id="feat-mirror">
+                <label class="switch">
+                    <input type="checkbox" name="feat-mirror" id="feat-mirror">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
-            <div>
+            <div class="checkbox-class">
                 <label for="feat-papertowels">Paper towels:</label>
-                <input type="checkbox" name="feat-papertowels" id="feat-papertowels">
+                <label class="switch">
+                    <input type="checkbox" name="feat-papertowels" id="feat-papertowels">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
-            <div>
+            <div class="checkbox-class">
                 <label for="feat-perfume">Perfume:</label>
-                <input type="checkbox" name="feat-perfume" id="feat-perfume">
+                <label class="switch">
+                    <input type="checkbox" name="feat-perfume" id="feat-perfume">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
             <div>
@@ -60,49 +70,57 @@
                 <input name="feat-access" type="text" id="feat-access">  
             </div>
 
-            <div>
+            <div class="checkbox-class">
                 <label for="feat-soap">Soap:</label>
-                <input type="text" name="feat-soap" id="feat-soap">
+                <label class="switch">
+                    <input type="checkbox" name="feat-soap" id="feat-soap">
+                    <span class="slider round"></span>
+                </label>
             </div>
 
             <div>
                 <label for="stalls">Number of stalls:</label>
-                <input type="number" name="stalls" id="stalls">
+                <input type="number" min="1" name="stalls" id="stalls">
             </div>
         
-            <div class="rating">
-                <label>
-                  <input type="radio" name="stars" value="1" />
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                </label>
-                <label>
-                  <input type="radio" name="stars" value="2" />
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                </label>
-                <label>
-                  <input type="radio" name="stars" value="3" />
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>   
-                </label>
-                <label>
-                  <input type="radio" name="stars" value="4" />
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                </label>
-                <label>
-                  <input type="radio" name="stars" value="5" />
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                  <span class="icon"><i class="fas fa-toilet-paper"></i></span>
-                </label>
-            </div>
             <div>
+                <label for="rating">Rating of the toilet:</label>
+                <div class="rating">
+                    <label>
+                      <input required type="radio" name="rating" value="1" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="2" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="3" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>   
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="4" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="5" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div>
+                
                 <input type="submit" value="Sent">
             </div>
         </form>

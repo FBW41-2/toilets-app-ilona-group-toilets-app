@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3ec0671596.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="form">
+        <form action="https://kloapp.herokuapp.com/add" method="POST">
+            <h2>Share the best place to think</h2>
+            <div>
+                <label for="city">Choose your city</label>
+                <input type="text" name="city" id="city" list="cities" minlength="3">
+                <datalist id="cities" required>
+                    <option value="Hamburg">
+                    <option value="Berlin">
+                    <option value="Wedel">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="zip">Zip Code:</label>
+                <input required name="zip" type="text" minlength="5" maxlength="5" id="zip">
+            </div>
+
+            <div>
+                <label for="street">Street:</label>
+                <input required name="street" minlength="3" type="text" id="street">
+            </div>
+
+            <div>
+                <label for="streetnr">Street No:</label>
+                <input required name="streetnr" type="text" id="streetnr">  
+            </div>
+
+            <div>
+                <label for="name">Name of location:</label>
+                <input name="name" type="text" id="name">  
+            </div>
+
+            <div class="checkbox-class">
+                <label for="feat-mirror">Mirror:</label>
+                <label class="switch">
+                    <input type="checkbox" name="feat-mirror" id="feat-mirror">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="checkbox-class">
+                <label for="feat-papertowels">Paper towels:</label>
+                <label class="switch">
+                    <input type="checkbox" name="feat-papertowels" id="feat-papertowels">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="checkbox-class">
+                <label for="feat-perfume">Perfume:</label>
+                <label class="switch">
+                    <input type="checkbox" name="feat-perfume" id="feat-perfume">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div>
+                <label for="feat-access">Accessibility:</label>
+                <input name="feat-access" type="text" id="feat-access">  
+            </div>
+
+            <div class="checkbox-class">
+                <label for="feat-soap">Soap:</label>
+                <label class="switch">
+                    <input type="checkbox" name="feat-soap" id="feat-soap">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div>
+                <label for="stalls">Number of stalls:</label>
+                <input type="number" min="1" name="stalls" id="stalls">
+            </div>
+        
+            <div>
+                <label for="rating">Rating of the toilet:</label>
+                <div class="rating">
+                    <label>
+                      <input required type="radio" name="rating" value="1" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="2" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="3" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>   
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="4" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                    <label>
+                      <input required type="radio" name="rating" value="5" />
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                      <span class="icon"><i class="fas fa-toilet-paper"></i></span>
+                    </label>
+                </div>
+            </div>
+            
+            <div>
+                <input type="submit" value="Sent">
+            </div>
+        </form>
+        
+        
+
+    
+
+    </div>
+    <div class="table-class">
+        <table id="toilets-table">
+            <thead>
+                <tr>
+                    <th>City</th>
+                    <th>Address</th>
+                    <th>Location</th>
+                    <th>Mirror</th>
+                    <th>Paper towels</th>
+                    <th>Perfume</th>
+                    <th>Accessability</th>
+                    <th>Soap</th>
+                    <th>Number of stalls</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td class="city"></td>
+                    <td class="address"></td>
+                    <td class="location"></td>
+                    <td class="feat-mirror"></td>
+                    <td class="feat-papertowels"></td>
+                    <td class="feat-perfume"></td>
+                    <td class="feat-access"></td>
+                    <td class="feat-soap"></td>
+                    <td class="stalls"></td>
+                    <td class="rating"></td>
+                    
+                </tr>
+            </tbody>
+
+            
+            
+        </table>
+    </div>
+    <script src="https://kloapp.herokuapp.com/javascripts/pure.min.js"></script>
+    <script src="https://kloapp.herokuapp.com/javascripts/render.js"></script>
+</body>
+</html>
+

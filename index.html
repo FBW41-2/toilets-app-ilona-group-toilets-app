@@ -10,15 +10,15 @@
 <body>
     <div class="form">
         <form action="https://kloapp.herokuapp.com/add" method="POST">
-            <h1>Find the best place to think</h1>
+            <h2>Share the best place to think</h2>
             <div>
                 <label for="city">Choose your city</label>
-                <select name="city" required minlength="3">
-                    <option value="">Please select the city</option>
-                    <option value="Hamburg">Hamburg</option>
-                    <option value="Berlin">Berlin</option>
-                    <option value="Wedel">Wedel</option>
-                </select>
+                <input type="text" name="city" id="city" list="cities" minlength="3">
+                <datalist id="cities" required>
+                    <option value="Hamburg">
+                    <option value="Berlin">
+                    <option value="Wedel">
+                </datalist>
             </div>
 
             <div>
@@ -120,7 +120,6 @@
             </div>
             
             <div>
-                
                 <input type="submit" value="Sent">
             </div>
         </form>

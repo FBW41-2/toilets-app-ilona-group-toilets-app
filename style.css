@@ -114,7 +114,7 @@ input[type=checkbox]{
     border-radius: 3px;
   } 
 
-.rating {
+  form .rating {
     margin: 10px auto;
     padding: 0;
     display: inline-block;
@@ -123,7 +123,7 @@ input[type=checkbox]{
     font-size: 2em;
   }
   
-  .rating label {
+ form .rating label {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,52 +131,52 @@ input[type=checkbox]{
     cursor: pointer;
   }
   
-  .rating label:last-child {
+ form .rating label:last-child {
     position: static;
   }
   
-  .rating label:nth-child(1) {
+  form .rating label:nth-child(1) {
     z-index: 5;
   }
   
-  .rating label:nth-child(2) {
+  form .rating label:nth-child(2) {
     z-index: 4;
   }
   
-  .rating label:nth-child(3) {
+  form .rating label:nth-child(3) {
     z-index: 3;
   }
   
-  .rating label:nth-child(4) {
+  form .rating label:nth-child(4) {
     z-index: 2;
   }
   
-  .rating label:nth-child(5) {
+  form .rating label:nth-child(5) {
     z-index: 1;
   }
   
-  .rating label input {
+  form .rating label input {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
   }
   
-  .rating label .icon {
+  form .rating label .icon {
     float: left;
     color: transparent;
   }
   
-  .rating label:last-child .icon {
+  form .rating label:last-child .icon {
     color: rgba(255, 255, 255, .3);
   }
   
-  .rating:not(:hover) label input:checked ~ .icon,
-  .rating:hover label:hover input ~ .icon {
+  form .rating:not(:hover) label input:checked ~ .icon,
+  form .rating:hover label:hover input ~ .icon {
     color: white;
   }
   
-  .rating label input:focus:not(:checked) ~ .icon:last-child {
+  form .rating label input:focus:not(:checked) ~ .icon:last-child {
     color: #4A8D94;
     opacity: 0.5;
     text-shadow: 0 0 5px white;
@@ -195,4 +195,39 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: white;
     color: #4A8D94;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  
+  
+}
+
+table, th, td {
+  border:1px solid #4A8D94;
+  padding: 10px;
+  
+}
+
+
+th  {
+  background-color:#4A8D94;
+  color: white;
+  
+}
+
+td.address {
+  width: 30%; 
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody {
+  background-color:#9FC3C7; 
+
 }
